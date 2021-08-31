@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Circular;
+  src: url(assets/fonts/lineto-circular-pro-book.ttf);
+}
+
+body {
+  font-family: Circular, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+body .logo {
+  padding-top: 24px;
+  height: auto;
+  width: 131px;
+  margin-bottom: 24px;
+}
+
+body .menu-btn {
+  font-weight: 600;
+  color: #b3b3b3;
+  padding: 0 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .menu-btn :visited {
+  stroke: none;
+}
+
+body .menu-btn svg {
+  margin-right: 16px;
+}
+
+body .menu-btn a {
+  font-size: 14px;
+  color: #2a2a2a;
+}
+
+body .menu-btn .list-group-item {
+  background-color: #000000;
+  color: #b3b3b3;
+  border-radius: 4px;
+}
+
+body .menu-btn .active {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  stroke: #ffffff;
+  border-color: #2a2a2a;
+}
+/*# sourceMappingURL=index.css.map */

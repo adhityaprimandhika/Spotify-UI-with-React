@@ -1,0 +1,62 @@
+$green: #1db954;
+$white: #ffffff;
+$lightblack: #191414;
+$black: #000000;
+$lightgrey: #b3b3b3;
+$grey: #2a2a2a;
+
+@font-face {
+  font-family: Circular;
+  src: url(assets/fonts/lineto-circular-pro-book.ttf);
+}
+
+@mixin my-font {
+  font-family: Circular, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  @include my-font();
+  background-color: $black;
+
+  .logo {
+    padding-top: 24px;
+    height: auto;
+    width: 131px;
+    margin-bottom: 24px;
+  }
+
+  .menu-btn {
+    font-weight: 600;
+    color: $lightgrey;
+    padding: 0 8px;
+    align-items: center;
+    margin-bottom: 24px;
+
+    :visited {
+      stroke: none;
+    }
+
+    svg {
+      margin-right: 16px;
+    }
+
+    a {
+      font-size: 14px;
+      color: $grey;
+    }
+
+    .list-group-item {
+      background-color: $black;
+      color: $lightgrey;
+      border-radius: 4px;
+    }
+
+    .active {
+      background-color: $grey;
+      color: $white;
+      stroke: $white;
+      border-color: $grey;
+    }
+  }
+}

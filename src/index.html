@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body class="bg-black">
+    <div class="row bg-black">
+        <div class="col-3 bg-black">
+            <div class="container">
+                <img class="logo" src="assets/images/Spotify_Logo_RGB_White.png" alt="logo spotify" width="150px">
+            </div>
+            <div class="menu-btn">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+                        href="#list-home" role="tab" aria-controls="list-home">
+                        <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                                fill="currentColor"></path>
+                        </svg>
+                        Home
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="list-search-list" data-bs-toggle="list"
+                        href="#list-search" role="tab" aria-controls="list-profile">
+                        <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                        Search
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="list-library-list" data-bs-toggle="list"
+                        href="#list-library" role="tab" aria-controls="list-library">
+                        <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                                fill="currentColor"></path>
+                        </svg>
+                        Your Library
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-9 bg-black">
+            <div class="container">
+                <div class="row right-row">
+                    <div class="col d-flex flex-row">
+                        <a href="#">
+                            <svg height="24" width="24" viewBox="0 0 24 24" class="left-button">
+                                <polyline points="16 4 7 12 16 20" fill="none"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg height="24" width="24" viewBox="0 0 24 24" class="right-button">
+                                <polyline points="8 4 17 12 8 20" fill="none"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col d-flex flex-row-reverse">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle btn-dropdown" type="button"
+                                id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                Adhitya Primandhika
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <div class="container dropdown-container">
+                                    <li>
+                                        <span>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                                href="#">Account
+                                                <svg height="16" width="16" viewBox="0 0 16 16" class="link-button ">
+                                                    <path fill-rule="evenodd"
+                                                        d="M15 7V1H9v1h4.29L7.11 8.18l.71.71L14 2.71V7h1zM1 15h12V9h-1v5H2V4h5V3H1v12z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li>
+                                        <span>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                                href="#">Upgrade to
+                                                Premium
+                                                <svg height="16" width="16" viewBox="0 0 16 16" class="link-button">
+                                                    <path fill-rule="evenodd"
+                                                        d="M15 7V1H9v1h4.29L7.11 8.18l.71.71L14 2.71V7h1zM1 15h12V9h-1v5H2V4h5V3H1v12z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary btn-upgrade">UPGRADE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
